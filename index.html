@@ -3,112 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Truvita Pharmaceuticals Pvt. Ltd. - Innovating health with quality medicines and breakthrough research.">
-  <meta name="keywords" content="Truvita, Pharmaceuticals, Medicines, Healthcare, Research, CEO Ajeet Yadav, Pharma India, Best Pharma Company">
-  <meta name="author" content="Ajeet Yadav">
-  <meta property="og:title" content="Truvita Pharmaceuticals Pvt. Ltd." />
-  <meta property="og:description" content="Innovating health, inspiring hope. Discover high-quality medicines and our commitment to research." />
-  <meta property="og:image" content="https://raw.githubusercontent.com/AjeetYadav7/TruvitaPharma.com/main/logo.png" />
-  <meta property="og:url" content="https://yourwebsite.com" />
-  <meta name="twitter:card" content="summary_large_image" />
   <title>Truvita Pharmaceuticals Pvt. Ltd.</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --primary: #003366;
+      --secondary: #0099cc;
+      --accent: #ffcc00;
+      --light-bg: #f0f8ff;
+      --dark-bg: #001f3f;
+    }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Roboto', sans-serif;
     }
+
     body {
-      background-color: #f4f9ff;
+      background-color: var(--light-bg);
       color: #333;
     }
+
     header {
-      background-color: #004aad;
+      background-color: var(--primary);
       color: white;
       text-align: center;
       padding: 30px 20px;
     }
+
     header img {
       max-width: 120px;
       margin-bottom: 10px;
+      transition: transform 0.3s;
     }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
     nav {
-      background-color: #00367d;
+      background-color: var(--dark-bg);
       padding: 12px;
       text-align: center;
     }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.3s;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      color: var(--accent);
     }
+
     .hero {
-      background-color: #001f4d;
-      background-image: linear-gradient(to right, #001f4d, #00367d);
+      background: linear-gradient(to right, var(--primary), var(--secondary));
       color: white;
       padding: 100px 20px 80px;
       text-align: center;
     }
+
     .hero h1 {
       font-size: 48px;
       font-weight: 700;
       margin-bottom: 15px;
     }
+
     .hero p {
       font-size: 22px;
       font-weight: 400;
     }
+
     section {
       padding: 60px 20px;
       text-align: center;
     }
+
     section h2 {
       font-size: 32px;
       margin-bottom: 15px;
-      color: #004aad;
+      color: var(--primary);
     }
+
     section p {
       font-size: 18px;
       max-width: 800px;
       margin: auto;
     }
+
     .founder {
       padding: 60px 20px;
-      background-color: #e9f1ff;
+      background-color: #e0f7ff;
       text-align: center;
     }
+
     .founder img {
       width: 180px;
       height: 180px;
       object-fit: cover;
       border-radius: 50%;
-      border: 5px solid #004aad;
+      border: 5px solid var(--primary);
       margin-bottom: 20px;
+      transition: transform 0.3s ease;
     }
+
+    .founder img:hover {
+      transform: scale(1.1);
+    }
+
     .founder h3 {
       font-size: 24px;
-      color: #00367d;
+      color: var(--dark-bg);
       margin-bottom: 8px;
     }
+
     .founder span {
       display: block;
       font-size: 16px;
       color: #555;
     }
+
     footer {
-      background-color: #002b5c;
+      background-color: var(--dark-bg);
       color: white;
       text-align: center;
       padding: 20px;
       font-size: 14px;
     }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--secondary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 12px 16px;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      display: none;
+      transition: background-color 0.3s;
+    }
+
+    .scroll-top:hover {
+      background-color: var(--primary);
+    }
   </style>
+  <script>
+    window.addEventListener('scroll', function() {
+      const scrollBtn = document.querySelector('.scroll-top');
+      scrollBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -148,11 +205,12 @@
   <section id="contact">
     <h2>Contact Us</h2>
     Email: <a href="mailto:truvitapharma@gmail.com">truvitapharma@gmail.com</a><br />
-      Call: <a href="tel:+917310132241">+91-7310132241</a><br />
-    <p>Address: Shivpur, Varanasi- India HQ | Future Global Branches: UK, USA, Australia</p>
+    Call: <a href="tel:+917310132241">+91-7310132241</a><br />
+    <p>Address: Shivpur, Varanasi - India HQ | Future Global Branches: UK, USA, Australia</p>
   </section>
   <footer>
     &copy; 2025 Truvita Pharmaceuticals Pvt. Ltd. | Designed with ❤️ by Your Baby
   </footer>
+  <button class="scroll-top" onclick="scrollToTop()">↑</button>
 </body>
 </html>
