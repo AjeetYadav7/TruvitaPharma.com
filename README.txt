@@ -15,6 +15,13 @@ Our mission is to build a healthier future, one step at a time.
 Truvita is aiming for expansion into the **UK, USA, Australia**, and other international markets.  
 We believe in creating a brand that sounds global, feels familiar, and stands for quality and compassion.
 
+# 🌿 Truvita Pharmaceuticals Pvt. Ltd.
+
+![Truvita Logo](https://github.com/AjeetYadav7/TruvitaPharma.com/raw/main/logo.png)
+
+Welcome to the official repository of **Truvita Pharmaceuticals Pvt. Ltd.**  
+We are an India-based pharmaceutical company...
+
  🖥️ Website
 
 🚀 [Live Website](http://truvitapharma.site)
