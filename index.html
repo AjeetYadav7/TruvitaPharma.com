@@ -3,9 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Truvita Pharmaceuticals Pvt. Ltd.</title>
+  <title>Truvita Pharmaceuticals Pvt. Ltd. | Best Pharma in Varanasi</title>
+
+  <!-- SEO Tags -->
+  <meta name="description" content="Truvita Pharmaceuticals Pvt. Ltd. - Best pharmaceutical company in Varanasi, producing high-quality and affordable medicines." />
+  <meta name="keywords" content="Truvita, Truvita Pharma, Truvita Pharmaceuticals, Best pharmaceutical company in Varanasi, Truvita location, pharma near Shivpur" />
+  <meta name="author" content="Truvita Pharmaceuticals Pvt. Ltd." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Truvita Pharmaceuticals Pvt. Ltd." />
+  <meta property="og:description" content="Best pharmaceutical company in Varanasi for innovative health solutions." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/AjeetYadav7/TruvitaPharma.com/main/logo.png" />
+  <meta property="og:url" content="https://truvitapharma.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Maps & Location Meta -->
+  <meta name="geo.region" content="IN-UP" />
+  <meta name="geo.placename" content="Varanasi" />
+  <meta name="geo.position" content="25.3392;82.9876" />
+  <meta name="ICBM" content="25.3392, 82.9876" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://truvitapharma.com" />
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
   <style>
+    /* --- CSS Same As Before --- */
     :root {
       --primary: #003366;
       --secondary: #0099cc;
@@ -155,7 +181,64 @@
     .scroll-top:hover {
       background-color: var(--primary);
     }
+
+    .product-showcase {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .product-box {
+      max-width: 300px;
+      text-align: center;
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .product-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-box img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      transition: opacity 0.3s ease;
+    }
+
+    .product-box:hover img {
+      opacity: 0.8;
+    }
+
+    .product-box h3 {
+      font-size: 20px;
+      color: #ff5a36;
+      margin-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .product-box:hover h3 {
+      color: #ff914d;
+    }
+
+    .product-box p {
+      font-size: 16px;
+      color: #555;
+      transition: color 0.3s ease;
+    }
+
+    .product-box:hover p {
+      color: #333;
+    }
   </style>
+
   <script>
     window.addEventListener('scroll', function() {
       const scrollBtn = document.querySelector('.scroll-top');
@@ -167,6 +250,7 @@
     }
   </script>
 </head>
+
 <body>
 
   <header>
@@ -174,6 +258,7 @@
     <h1>Truvita Pharmaceuticals Pvt. Ltd.</h1>
     <p>Innovating Health, Inspiring Hope</p>
   </header>
+
   <nav>
     <a href="#about">About</a>
     <a href="#products">Products</a>
@@ -181,14 +266,17 @@
     <a href="#founder">Founder</a>
     <a href="#contact">Contact</a>
   </nav>
+
   <div class="hero">
     <h1>Welcome to Truvita</h1>
     <p>Where Cutting-edge Medicine Meets Compassionate Innovation</p>
   </div>
+
   <section id="about">
     <h2>About Us</h2>
     <p>Truvita Pharmaceuticals is dedicated to producing high-quality, affordable medicines. We’re committed to advancing research into diseases that lack a cure, using part of our profits to fuel hope and innovation.</p>
   </section>
+
   <section id="products">
     <h2>Our Products</h2>
     <p>We specialize in a wide range of pharmaceutical and personal care products, including general health, skincare, and cosmetic essentials.</p>
@@ -209,77 +297,31 @@
         <p>Daily glow cream with skin-brightening actives — gentle, powerful & elegant.</p>
       </div>
     </div>
-</section>
-
-<style>
-  .product-showcase {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 40px;
-  }
-  .product-box {
-    max-width: 300px;
-    text-align: center;
-    background: #fff;
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-  }
-  .product-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  }
-  .product-box img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    transition: opacity 0.3s ease;
-  }
-  .product-box:hover img {
-    opacity: 0.8; /* Slight fade on hover */
-  }
-  .product-box h3 {
-    font-size: 20px;
-    color: #ff5a36; /* Energetic orange-red */
-    margin-bottom: 10px;
-    transition: color 0.3s ease;
-  }
-  .product-box:hover h3 {
-    color: #ff914d; /* Lighter orange for effect */
-  }
-  .product-box p {
-    font-size: 16px;
-    color: #555;
-    transition: color 0.3s ease;
-  }
-  .product-box:hover p {
-    color: #333; /* Darker text for better contrast */
-  }
-</style>
+  </section>
 
   <section id="research">
     <h2>Our Research</h2>
     <p>At Truvita, we don’t just manufacture medicine—we push boundaries in healthcare innovation. Our R&D wing is constantly exploring new treatments for incurable diseases.</p>
   </section>
+
   <section id="founder" class="founder">
     <img src="https://github.com/AjeetYadav7/TruvitaPharma.com/blob/main/Ajeet%201.jpg?raw=true" alt="Ajeet Yadav - Founder" />
     <h3>Mr. Ajeet Yadav</h3>
     <span>Founder & CEO, Truvita Pharmaceuticals Pvt. Ltd.</span>
     <p>With a vision to transform healthcare and touch lives across the globe, Mr. Yadav is leading Truvita to be one of India's most innovative pharmaceutical firms, while expanding its global footprint with integrity and dedication.</p>
   </section>
+
   <section id="contact">
     <h2>Contact Us</h2>
     Email: <a href="mailto:truvitapharma@gmail.com">truvitapharma@gmail.com</a><br />
     Call: <a href="tel:+917310132241">+91-7310132241</a><br />
     <p>Address: Shivpur, Varanasi - India HQ | Future Global Branches: UK, USA, Australia</p>
   </section>
+
   <footer>
     &copy; 2025 Truvita Pharmaceuticals Pvt. Ltd. | Designed with ❤️ by Your Baby
   </footer>
+
   <button class="scroll-top" onclick="scrollToTop()">↑</button>
 </body>
 </html>
