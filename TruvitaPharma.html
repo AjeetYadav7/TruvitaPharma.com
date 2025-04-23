@@ -155,6 +155,62 @@
     .scroll-top:hover {
       background-color: var(--primary);
     }
+
+    .product-showcase {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .product-box {
+      max-width: 300px;
+      text-align: center;
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .product-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-box img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      transition: opacity 0.3s ease;
+    }
+
+    .product-box:hover img {
+      opacity: 0.8;
+    }
+
+    .product-box h3 {
+      font-size: 20px;
+      color: #ff5a36;
+      margin-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .product-box:hover h3 {
+      color: #ff914d;
+    }
+
+    .product-box p {
+      font-size: 16px;
+      color: #555;
+      transition: color 0.3s ease;
+    }
+
+    .product-box:hover p {
+      color: #333;
+    }
   </style>
   <script>
     window.addEventListener('scroll', function() {
@@ -168,7 +224,6 @@
   </script>
 </head>
 <body>
-
   <header>
     <img src="https://raw.githubusercontent.com/AjeetYadav7/TruvitaPharma.com/main/logo.png" alt="Truvita Logo" />
     <h1>Truvita Pharmaceuticals Pvt. Ltd.</h1>
@@ -208,75 +263,24 @@
         <h3>Bright Day Cream</h3>
         <p>Daily glow cream with skin-brightening actives — gentle, powerful & elegant.</p>
       </div>
+      <div class="product-box">
+        <img src="https://raw.githubusercontent.com/AjeetYadav7/TruvitaPharma.com/refs/heads/main/Amoxyline.png" alt="Amoxicillin + Potassium Clavulanate">
+        <h3>Amoxicillin + Clavulanate Tablets</h3>
+        <p>This powerful antibiotic combination is one of the most prescribed treatments in India for respiratory, urinary, and skin infections. Proven effectiveness trusted by healthcare professionals.</p>
+      </div>
     </div>
-</section>
-
-<style>
-  .product-showcase {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 40px;
-  }
-  .product-box {
-    max-width: 300px;
-    text-align: center;
-    background: #fff;
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-  }
-  .product-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  }
-  .product-box img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    transition: opacity 0.3s ease;
-  }
-  .product-box:hover img {
-    opacity: 0.8; /* Slight fade on hover */
-  }
-  .product-box h3 {
-    font-size: 20px;
-    color: #ff5a36; /* Energetic orange-red */
-    margin-bottom: 10px;
-    transition: color 0.3s ease;
-  }
-  .product-box:hover h3 {
-    color: #ff914d; /* Lighter orange for effect */
-  }
-  .product-box p {
-    font-size: 16px;
-    color: #555;
-    transition: color 0.3s ease;
-  }
-  .product-box:hover p {
-    color: #333; /* Darker text for better contrast */
-  }
-</style>
-
+  </section>
   <section id="research">
     <h2>Our Research</h2>
     <p>At Truvita, we don’t just manufacture medicine—we push boundaries in healthcare innovation. Our R&D wing is constantly exploring new treatments for incurable diseases.</p>
   </section>
   <section id="founder" class="founder">
-  <div style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap;">
-    
-    <!-- Founder Card -->
-    <div>
-      <img src="https://github.com/AjeetYadav7/TruvitaPharma.com/blob/main/Ajeet%201.jpg?raw=true" alt="Ajeet Yadav - Founder" />
-      <h3>Mr. Ajeet Yadav</h3>
-      <span>Founder & CEO</span>
-      <p>With a vision to transform healthcare and touch lives across the globe, Mr. Yadav is leading Truvita to be one of India's most innovative pharmaceutical firms, while expanding its global footprint with integrity and dedication.</p>
-    </div>
-    
-    <!-- Co-Founder Card -->
+    <img src="https://github.com/AjeetYadav7/TruvitaPharma.com/blob/main/Ajeet%201.jpg?raw=true" alt="Ajeet Yadav - Founder" />
+    <h3>Mr. Ajeet Yadav</h3>
+    <span>Founder & CEO, Truvita Pharmaceuticals Pvt. Ltd.</span>
+    <p>With a vision to transform healthcare and touch lives across the globe, Mr. Yadav is leading Truvita to be one of India's most innovative pharmaceutical firms, while expanding its global footprint with integrity and dedication.</p>
+    <br><br>
+ <!-- Co-Founder Card -->
     <div>
       <img src="https://raw.githubusercontent.com/AjeetYadav7/TruvitaPharma.com/0f31da487b73e3c9471925f666e7ba1aaf9be4a8/18395-16-.jpg" alt="Sanjay Kumar Yadav - Co-Founder" />
       <h3>Mr. Sanjay Kumar Yadav</h3>
@@ -284,9 +288,11 @@
       <p>Mr. Sanjay brings a strategic edge and deep insight into pharmaceutical innovation. As Co-Founder, he empowers Truvita’s mission with strength, compassion, and leadership rooted in excellence.</p>
     </div>
 
-  </div>
-</section>
-
+    <img src="https://raw.githubusercontent.com/AjeetYadav7/TruvitaPharma.com/refs/heads/main/Priyanshu%20md..jpg" alt="Mr. Priyanshu Gupta - MD" />
+    <h3>Mr. Priyanshu Gupta</h3>
+    <span>Managing Director, Truvita Pharmaceuticals Pvt. Ltd.</span>
+    <p>With strong leadership and a deep commitment to quality, Mr. Gupta drives operational excellence and innovation, making Truvita a name trusted by millions.</p>
+  </section>
   <section id="contact">
     <h2>Contact Us</h2>
     Email: <a href="mailto:truvitapharma@gmail.com">truvitapharma@gmail.com</a><br />
