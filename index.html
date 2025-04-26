@@ -183,7 +183,7 @@
     .product-box img {
       width: 100%;
       border-radius: 12px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       transition: opacity 0.3s ease;
     }
 
@@ -211,6 +211,21 @@
     .product-box:hover p {
       color: #333;
     }
+
+    .multiple-images {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .multiple-images img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid var(--secondary);
+    }
   </style>
   <script>
     window.addEventListener('scroll', function() {
@@ -229,6 +244,7 @@
     <h1>Truvita Pharmaceuticals Pvt. Ltd.</h1>
     <p>Innovating Health, Inspiring Hope</p>
   </header>
+
   <nav>
     <a href="#about">About</a>
     <a href="#products">Products</a>
@@ -236,49 +252,60 @@
     <a href="#founder">Founder</a>
     <a href="#contact">Contact</a>
   </nav>
+
   <div class="hero">
     <h1>Welcome to Truvita</h1>
     <p>Where Cutting-edge Medicine Meets Compassionate Innovation</p>
   </div>
+
   <section id="about">
     <h2>About Us</h2>
     <p>Truvita Pharmaceuticals is dedicated to producing high-quality, affordable medicines. We’re committed to advancing research into diseases that lack a cure, using part of our profits to fuel hope and innovation.</p>
   </section>
-  <section id="products">
+
+ <section id="products">
     <h2>Our Products</h2>
-    <p>We specialize in a wide range of pharmaceutical and personal care products, including general health, skincare, and cosmetic essentials.</p>
+    <p>We specialize in a wide range of pharmaceutical and personal care products, including general health, skincare, and protective essentials.</p>
     <div class="product-showcase">
       <div class="product-box">
-        <img src="https://github.com/AjeetYadav7/TruvitaPharma.com/blob/main/caa4eaf8-4692-45be-a70e-e5e6c726e7a3.png?raw=true" alt="Truvita Glow Repair Serum">
+        <img src="https://raw.githubusercontent.com/AjeetYadav7/TruvitaPharma.com/refs/heads/main/Truvita.png" alt="Glow Repair Serum">
         <h3>Glow Repair Serum</h3>
         <p>Premium skin-brightening formula in an elegant glass bottle for a luxurious feel.</p>
       </div>
+
       <div class="product-box">
-        <img src="https://github.com/AjeetYadav7/TruvitaPharma.com/blob/main/Truvita3.png?raw=true" alt="Truvita Hydra Boost Drops">
+        <img src="https://github.com/AjeetYadav7/TruvitaPharma.com/blob/main/Truvita3.png?raw=true" alt="Hydra Boost Drops">
         <h3>Hydra Boost Drops</h3>
         <p>Deep hydration & nourishment with a premium formulation for radiant skin.</p>
       </div>
+
       <div class="product-box">
-        <img src="https://github.com/AjeetYadav7/TruvitaPharma.com/blob/main/Cream.png?raw=true" alt="Truvita Bright Day Cream">
+        <img src="https://github.com/AjeetYadav7/TruvitaPharma.com/blob/main/Cream.png?raw=true" alt="Bright Day Cream">
         <h3>Bright Day Cream</h3>
         <p>Daily glow cream with skin-brightening actives — gentle, powerful & elegant.</p>
       </div>
+
       <div class="product-box">
-        <img src="https://raw.githubusercontent.com/AjeetYadav7/TruvitaPharma.com/refs/heads/main/Amoxyline.png" alt="Amoxicillin + Potassium Clavulanate">
+        <img src="https://raw.githubusercontent.com/AjeetYadav7/TruvitaPharma.com/refs/heads/main/Amoxyline.png" alt="Amoxicillin + Clavulanate">
         <h3>Amoxicillin + Clavulanate Tablets</h3>
-        <p>This powerful antibiotic combination is one of the most prescribed treatments in India for respiratory, urinary, and skin infections. Proven effectiveness trusted by healthcare professionals.</p>
+        <p>This powerful antibiotic combination is widely trusted for treating respiratory and skin infections.</p>
+      </div>
+
+      <div class="product-box">
+        <img src="https://raw.githubusercontent.com/AjeetYadav7/TruvitaPharma.com/refs/heads/main/mask.png" alt="N95 Side View">
+        <h3>N95 Protective Mask</h3>
+        <p>High-quality N95 masks offering superior protection against airborne particles and infections. Comfortable, durable, and certified safe for everyday use.</p>
       </div>
     </div>
-  </section>
   <section id="research">
     <h2>Our Research</h2>
     <p>At Truvita, we don’t just manufacture medicine—we push boundaries in healthcare innovation. Our R&D wing is constantly exploring new treatments for incurable diseases.</p>
   </section>
+
   <section id="founder" class="founder">
   <h2>Our Leadership</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
 
-   <!-- Founder Row -->
+  <!-- Founder Row -->
   <div style="display: flex; justify-content: center; margin-top: 40px;">
     <div style="max-width: 300px; text-align: center;">
       <img src="https://raw.githubusercontent.com/AjeetYadav7/TruvitaPharma.com/refs/heads/main/Mr.%20Ajeet%20Yadav2.jpg" alt="Founder Ajeet Yadav" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 5px solid #003366; margin-bottom: 20px; transition: transform 0.3s ease;" />
@@ -307,7 +334,7 @@
       <p style="margin-top: 10px;">With strong leadership and deep commitment to quality, Mr. Gupta drives operational excellence, making Truvita a name trusted by millions.</p>
     </div>
 
-    <!-- HR - Sadhana Yadav -->
+<!-- HR - Sadhana Yadav -->
 <div style="max-width: 300px; text-align: center;">
   <img src="https://raw.githubusercontent.com/AjeetYadav7/TruvitaPharma.com/main/Sadhana_Yadav.jpg" alt="Ms. Sadhana Yadav - HR" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 5px solid #003366; margin-bottom: 20px; transition: transform 0.3s ease;" />
   <h3>Ms. Sadhana Yadav</h3>
@@ -315,24 +342,35 @@
   <p style="margin-top: 10px;">Ms. Sadhana brings passion, dedication, and a strong sense of community, ensuring a positive and vibrant workplace at Truvita Pharmaceuticals.</p>
 </div>
 
-   
+
+    <!-- Extra Member Placeholder (if needed) -->
+    <!--
+    <div style="max-width: 300px; text-align: center;">
+      <img src="IMAGE_URL" alt="New Member" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 5px solid #003366; margin-bottom: 20px; transition: transform 0.3s ease;" />
+      <h3>Member Name</h3>
+      <span>Position</span>
+      <p style="margin-top: 10px;">Short Description</p>
+    </div>
+    -->
 
   </div>
 </section>
 
 
-  </div>
-</section>
+ 
 
+ 
   <section id="contact">
     <h2>Contact Us</h2>
     Email: <a href="mailto:truvitapharma@gmail.com">truvitapharma@gmail.com</a><br />
     Call: <a href="tel:+917310132241">+91-7310132241</a><br />
     <p>Address: Shivpur, Varanasi - India HQ | Future Global Branches: UK, USA, Australia</p>
   </section>
+
   <footer>
     &copy; 2025 Truvita Pharmaceuticals Pvt. Ltd. | Designed with ❤️ by Your Baby
   </footer>
+
   <button class="scroll-top" onclick="scrollToTop()">↑</button>
 </body>
 </html>
